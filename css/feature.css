@@ -1,0 +1,39 @@
+#textf{
+    text-align: center;
+    font-size: 1rem;margin: 1.5rem;
+    width: 36vw;
+    
+}
+#hdfeature{
+    font-size: 2.3rem;
+    color: rgb(37, 43, 70);
+    margin: 1.5rem;
+    text-align: center;
+}
+.feature-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem;
+    padding: 1.1rem;
+    flex-direction: column;
+    /* margin-bottom: 8em; */
+    margin-bottom: 3.5rem;
+}
+
+
+@media (max-width:680px) {
+    #textf{
+        width: 70vw;
+    }
+}
+@media (max-width:527px) {
+    #textf{
+        width: 80vw;
+    }
+}
+@media (max-width:420px) {
+    #textf{
+        width: 90vw;
+    }
+}

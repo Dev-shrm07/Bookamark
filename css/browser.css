@@ -1,0 +1,139 @@
+.cards {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 8px 2px 60px rgb(227, 227, 228);
+  margin: 1.3rem;
+  border-radius: 0.9rem;
+}
+#browser-cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2.3rem;
+  box-sizing: unset;
+}
+.browser-logos {
+  width: 10vw;
+  height: 19vh;
+  margin: auto;
+}
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1.4rem;
+  box-sizing: unset;
+}
+.smallhd {
+  font-size: 1.6rem;
+  margin: 1.2rem;
+  color: rgb(37, 43, 70);
+}
+
+.browserbtn {
+  background-color: rgb(83, 104, 223);
+  color: white;
+  border: 1px solid rgb(83, 104, 223);
+  border-radius: 3px;
+  margin-right: 0.3rem;
+  padding-right: 1vw;
+  padding-left: 1vw;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  cursor: pointer;
+}
+.browserbtn:hover {
+  background-color: white;
+  color: rgb(83, 104, 223);
+}
+#card-1 {
+  position: relative;
+  bottom: 8.5vh;
+}
+#card-3 {
+  position: relative;
+  top: 8.5vh;
+}
+
+@media (max-width: 963px) {
+  #browser-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2.3rem;
+    box-sizing: unset;
+    flex-direction: column;
+  }
+  .cards{
+      width: 70%;
+  }
+}
+
+#textb{
+    text-align: center;
+    font-size: 1rem;margin: 1.5rem;
+    width: 40vw;
+    
+}
+#hdbrowse{
+    font-size: 2.3rem;
+    color: rgb(37, 43, 70);
+    margin: 1.5rem;
+    text-align: center;
+}
+.browser-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem;
+    padding: 1.1rem;
+    flex-direction: column;
+    /* margin-bottom: 8em; */
+    margin-bottom: 3.5rem;
+}
+
+@media (max-width:810px) {
+    .browser-logos{
+        height: 15vh;
+        width: 10vw;
+    }
+}
+@media (max-width:647px) {
+    .browser-logos{
+        height: 18vh;
+        width: 13vw;
+    }
+    .smallhd{
+        font-size: 1.4rem;
+    }
+    
+}
+@media (max-width:503px) {
+    .browser-logos{
+        height: 22vh;
+        width: 20vw;
+        margin-bottom: 1.3rem;
+    }
+}
+@media (max-width:467px) {
+    .browser-logos{
+        height: 21vh;
+        width: 23vw;
+    }
+}
+@media (max-width:680px) {
+  #textb{
+      width: 70vw;
+  }
+}
+@media (max-width:527px) {
+  #textb{
+      width: 80vw;
+  }
+}
+@media (max-width:420px) {
+  #textb{
+      width: 90vw;
+  }
+}

@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookmark.com</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/head-style.css" />
+    <link rel="stylesheet" href="css/sec1.css" />
+    <link rel="stylesheet" href="css/feature.css" />
+    <link rel="stylesheet" href="css/browser.css" />
+    <link rel="stylesheet" href="css/faq.css" />
+    <link rel="stylesheet" href="css/abovefooter.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/tab.css" />
+    <link rel="stylesheet" href="css/tab2.css" />
+    <link rel="stylesheet" href="css/tab3.css" />
+    <link rel="stylesheet" href="css/button.css" />
+    <link
+      rel="shortcut icon"
+      href="svg/favicon-32x32.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <nav id="navbar">
+      <ul id="navbar-ul">
+        <li>
+          <img src="svg/logo-bookmark.svg" alt="logo" id="logo-bookmark" />
+        </li>
+        <li id="menu">
+          <div id="hamburger">
+            <ul id="hidden-menu">
+              <li id="hidden-icons1">
+                <div id="cross">
+                  <img src="svg/logo-nav.svg" alt="" id="logohidden" />
+                  <img
+                    src="svg/icon-close.svg"
+                    alt=""
+                    id="closeicon"
+                    onclick="close()"
+                  />
+                </div>
+              </li>
+              <li class="links for-border" id="features">FEATURES</li>
+              <li class="links for-border">PRICING</li>
+              <li class="links for-border">CONTACT</li>
+              <li class="links">
+                <button id="login-btn">LOGIN</button>
+              </li>
+              <li id="social-icons">
+                <div id="icons">
+                  <img src="svg/icon-facebook.svg" alt="" id="fb" />
+                  <img src="svg/icon-twitter.svg" alt="" id="twitter" />
+                </div>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li id="hidden-menu">
+          <img
+            src="svg/icon-hamburger.svg"
+            alt="icon"
+            id="menu-btn"
+            onclick="dropmenu()"
+          />
+        </li>
+      </ul>
+    </nav>
+    <section id="first-section">
+      <div id="intro-content">
+        <div id="first-part">
+          <h1 id="heading-section1">A Simple Bookmark Manager</h1>
+          <p class="text" id="sec1-text">
+            A clean and simple interface to organise your favourite websites.
+            Open a new browser tab see your site open instantly. Try it for
+            free.
+          </p>
+          <div id="btn-container">
+            <button id="chrome-btn" class="section-1-btn">
+              Get it on Chrome
+            </button>
+            <button id="firefox-btn" class="section-1-btn">
+              Get it on Firefox
+            </button>
+          </div>
+        </div>
+      </div>
+      <div id="illustration">
+        <img src="svg/illustration-hero.svg" alt="" id="illus-img" />
+        <div id="illustration-hero-bg"></div>
+      </div>
+    </section>
+    <div class="feature-text">
+      <h1 id="hdfetaure">Features</h1>
+      <p class="text" id="textf">
+        Our aim is to make it quick and easy for you to access your favourite
+        websites. Your bookmarks sync between your devices so you can access
+        them on the go
+      </p>
+    </div>
+    <div id="btncont2">
+      <div id="btns">
+        <div class="btncont3" id="button-1">
+          <button id="btnf-1" class="feature-buttons" onclick="showtab1()">
+            Simple Bookmarking
+          </button>
+        </div>
+        <div class="btncont3" id="button-2">
+          <button id="btnf-2" class="feature-buttons" onclick="showtab2()">Speady Searching</button>
+        </div>
+        <div class="btncont3" id="button-3">
+          <button id="btnf-3" class="feature-buttons" onclick="showtab3()">Easy sharing</button>
+        </div>
+      </div>
+    </div>
+    <section id="tab-section1">
+      <div class="tabimage">
+        <img
+          src="svg/illustration-features-tab-1.svg"
+          alt=""
+          class="tabillus"
+          id="tabillus"
+        />
+        <div class="tabcircle"></div>
+      </div>
+      <div class="tabcontent">
+        <h1 class="tabhd">Bookmark in one click</h1>
+        <p class="text tabtext">
+          organize your bookmarks however you like. Our simple drag-and-drop
+          interface gives you complete control over how you manage your
+          favourite sites
+        </p>
+        <button class="tabbtn">More info</button>
+      </div>
+    </section>
+    <section id="tab-section2">
+      <div class="tabimage">
+        <img
+          src="svg/illustration-features-tab-2.svg"
+          alt=""
+          class="tabillus"
+          id="tabillus"
+        />
+        <div class="tabcircle"></div>
+      </div>
+      <div class="tabcontent">
+        <h1 class="tabhd">Intelligent Search</h1>
+        <p class="text tabtext">
+          Our powerfull search feature will help you find saved sites in no time
+          at all. No need to trawl through all of your bookmarks.
+        </p>
+        <button class="tabbtn">More info</button>
+      </div>
+    </section>
+    <section id="tab-section3">
+      <div class="tabimage">
+        <img
+          src="svg/illustration-features-tab-3.svg"
+          alt=""
+          class="tabillus"
+          id="tabillus"
+        />
+        <div class="tabcircle"></div>
+      </div>
+      <div class="tabcontent">
+        <h1 class="tabhd">Share your bookmarks</h1>
+        <p class="text tabtext">
+          Easily share your bookmarks and collections with others. Create a
+          shareable link that you can send at the click of a button.
+        </p>
+        <button class="tabbtn">More info</button>
+      </div>
+    </section>
+    <div class="browser-text">
+      <h1 id="hdbrowse">Download the extension</h1>
+      <p class="text" id="textb">
+        We've got more browsers in the pipeline. Please do let us know if you've
+        got a favourite you'd like us to prioritize
+      </p>
+    </div>
+    <section id="browser-cards">
+      <div class="cards" id="card-1">
+        <div class="box">
+          <img src="svg/logo-chrome.svg" alt="" class="browser-logos" />
+          <h1 class="smallhd">Add to Chrome</h1>
+          <p class="text">Minimum version 62</p>
+        </div>
+
+        <img src="svg/bg-dots.svg" alt="" />
+        <div class="box">
+          <button class="browserbtn">Add & install Extension</button>
+        </div>
+      </div>
+      <div class="cards" id="card-2">
+        <div class="box">
+          <img src="svg/logo-firefox.svg" alt="" class="browser-logos" />
+          <h1 class="smallhd">Add to Firefox</h1>
+          <p class="text">Minimum version 55</p>
+        </div>
+
+        <img src="svg/bg-dots.svg" alt="" />
+        <div class="box">
+          <button class="browserbtn">Add & install Extension</button>
+        </div>
+      </div>
+      <div class="cards" id="card-3">
+        <div class="box">
+          <img src="svg/logo-opera.svg" alt="" class="browser-logos" />
+          <h1 class="smallhd">Add to Opera</h1>
+          <p class="text">Minimum version 46</p>
+        </div>
+
+        <img src="svg/bg-dots.svg" alt="" />
+        <div class="box">
+          <button class="browserbtn">Add & install Extension</button>
+        </div>
+      </div>
+    </section>
+    <div class="faq-text">
+      <h1 id="hdfaq">Frequently Asked Questions</h1>
+      <p class="text" id="textfaq">
+        Here are some of our FAQs. If you have any other questions you'd like
+        answered please feel free to email us.
+      </p>
+    </div>
+    <section id="faqbox">
+      <div class="faqcontainer" id="box1">
+        <div class="question" id="part1">
+          <p class="ques" id="ques1">What is Bookmark?</p>
+          <img
+            src="svg/icon-arrow.svg"
+            alt=""
+            class="arrowup arr"
+            id="arrdown1"
+            onclick="showans(this.id)"
+          />
+          <img
+            src="svg/arrowup.svg"
+            alt=""
+            class="arrowdown arr"
+            id="arrup1"
+            onclick="hideans(this.id)"
+          />
+        </div>
+        <p class="answer" id="ans-1">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, harum
+          iusto. Provident, eum. Dolores, recusandae?
+        </p>
+      </div>
+      <div class="faqcontainer" id="box2">
+        <div class="question" id="part2">
+          <p class="ques" id="ques2">How can I request a new browser?</p>
+          <img
+            src="svg/icon-arrow.svg"
+            alt=""
+            class="arrowup arr"
+            id="arrdown2"
+            onclick="showans(this.id)"
+          />
+          <img
+            src="svg/arrowup.svg"
+            alt=""
+            class="arrowdown arr"
+            id="arrup2"
+            onclick="hideans(this.id)"
+          />
+        </div>
+        <p class="answer" id="ans-2">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, harum
+          iusto. Provident, eum. Dolores, recusandae?
+        </p>
+      </div>
+      <div class="faqcontainer" id="box3">
+        <div class="question" id="part3">
+          <p class="ques" id="ques3">Is there a mobile App?</p>
+          <img
+            src="svg/icon-arrow.svg"
+            alt=""
+            class="arrowup arr"
+            id="arrdown3"
+            onclick="showans(this.id)"
+          />
+          <img
+            src="svg/arrowup.svg"
+            alt=""
+            class="arrowdown arr"
+            id="arrup3"
+            onclick="hideans(this.id)"
+          />
+        </div>
+        <p class="answer" id="ans-3">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, harum
+          iusto. Provident, eum. Dolores, recusandae?
+        </p>
+      </div>
+      <div class="faqcontainer" id="box4">
+        <div class="question" id="part4">
+          <p class="ques" id="ques4">What about other Chromium browsers?</p>
+          <img
+            src="svg/icon-arrow.svg"
+            alt=""
+            class="arrowup arr"
+            id="arrdown4"
+            onclick="showans(this.id)"
+          />
+          <img
+            src="svg/arrowup.svg"
+            alt=""
+            class="arrowdown arr"
+            id="arrup4"
+            onclick="hideans(this.id)"
+          />
+        </div>
+        <p class="answer" id="ans-4">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, harum
+          iusto. Provident, eum. Dolores, recusandae?
+        </p>
+      </div>
+    </section>
+    <div class="faq-bottom-btn">
+      <button id="more-btn">More info</button>
+    </div>
+    <div id="above-footer">
+      <div id="text-1">35,000+ already joined.</div>
+      <div id="text-2">Stay up-to-date with what we're doing.</div>
+      <div id="contact-email">
+        <div id="mail-id">
+          <div id="inp">
+            <input
+              type="email"
+              name=""
+              id="mail-inp"
+              placeholder="Enter your email address"
+              value=""
+            />
+            <img src="svg/icon-error.svg" alt="" id="error" />
+          </div>
+          <div id="texterror">Whoops, make sure it's an email</div>
+        </div>
+        <button id="contact" onclick="mailcheck()">Contact Us</button>
+      </div>
+    </div>
+    <div id="footer">
+      <ul id="footul">
+        <li id="footimg">
+          <img src="svg/logo-foot.svg" id="foot-logo" alt="" />
+        </li>
+        <li class="footext li">FEATURES</li>
+        <li class="footext li">PRICING</li>
+        <li class="footext li">CONTACT</li>
+        <li id="logof" class="li">
+          <img
+            src="svg/icon-facebook.svg"
+            alt=""
+            class="footlogo"
+            id="fbf"
+            onmouseover="showfb()"
+            onmouseout="hidefb()"
+          />
+
+          <img
+            src="svg/icon-twitter.svg"
+            alt=""
+            class="footlogo"
+            id="twf"
+            onmouseover="showtw()"
+            onmouseout="hidetw()"
+          />
+        </li>
+      </ul>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>

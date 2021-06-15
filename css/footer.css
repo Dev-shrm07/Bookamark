@@ -1,0 +1,93 @@
+#footer{
+    background: rgb(37, 43, 70);
+    
+    
+}
+#footul{
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    position: relative;
+    
+
+}
+#footul>li{
+    list-style: none;
+}
+.li{
+    list-style: none;
+    margin: 1.5rem;
+    margin-top: 0.8rem;
+    cursor: pointer;
+}
+.footext{
+    font-size: 1rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    cursor: pointer;
+    color: white;
+}
+.footext:hover{
+    color: rgb(250, 87, 87);
+
+}
+#logof{
+    position: absolute;
+    right: 5vw;
+}
+#footimg{
+    position: absolute;
+    left: 6vw;
+    cursor: pointer;
+    margin-top: 0.65rem;
+}
+.footlogo{
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+#fbf1{
+    display: none;
+}
+#twf1{
+    display: none;
+}
+
+@media (max-width:816px) {
+    #footimg{
+        position: absolute;
+        left: 1vw;
+        margin-top: 0.65rem;
+    }
+    #logof{
+        position: absolute;
+        right: 1vw;
+    }
+}
+@media (max-width:700px){
+    #footul{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+    }
+    #logof{
+        position: unset;
+    }
+    #footimg{
+        position: unset;
+        margin-bottom: 2rem;
+    }
+    .footlogo{
+        margin: unset;
+    }
+    #fbf{
+        margin-right: 0.6rem;
+    }
+    #twf{
+        margin-left: 0.6rem;
+    }
+   #footul>li{
+       display: flex;
+       justify-content: center;
+   }
+}

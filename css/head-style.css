@@ -1,0 +1,232 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  font-family: "Rubik", sans-serif;
+  box-sizing: border-box;
+}
+
+#hidden-icons1{
+    display: none;
+}
+#social-icons{
+    display: none;
+}
+#navbar-ul{
+    display: flex;
+    margin: 1.1rem;
+    padding: 0.8rem;
+    color: rgb(37, 43, 70);
+    font-size: 0.7rem;
+    font-weight: bolder;
+}
+#navbar-ul>li{
+    margin: 1.2rem;
+    list-style: none;
+}
+
+#hidden-menu{
+ 
+    display: flex;
+    
+    color: rgb(37, 43, 70);
+    font-size: 0.8rem;
+    font-weight: bolder;
+}
+#hidden-menu >li{
+    list-style: none;
+    margin-right: 1.2rem;
+    margin-left: 1.2rem;
+}
+#menu{
+    /* width: 100%; */
+    position: absolute;
+    right: 2rem;
+    box-sizing: border-box;
+}
+#hidden-menu>li{
+    width: 100%;
+    float: right;
+}
+
+#login-btn{
+    border: 0;
+    color: white;
+    background-color: rgb(250, 87, 87);
+    font-size: 0.7rem;
+    font-weight: bolder;
+    padding-right: 1.7em;
+    padding-left: 1.7em;
+    border-radius: 3px;
+    padding-top: 0.6em;
+    padding-bottom: 0.6em;
+    margin: 0;
+    border: 1px solid rgb(250, 87, 87);
+    position: relative;
+    bottom: 0.5rem;
+    cursor: pointer;
+}
+.links:hover{
+    color: rgb(250, 87, 87);
+}
+.links{
+    cursor: pointer;
+}
+
+
+#login-btn:hover{
+    background-color: white;
+    color: rgb(250, 87, 87);
+    border: 1px solid rgb(250, 87, 87);
+}
+
+#menu-btn{
+    display: none;
+}
+@media only screen and (max-width:820px){
+    
+    #menu{
+        position: absolute;
+        right: 0.5rem;
+        box-sizing: border-box;
+    }
+}
+@media only screen and (max-width:780px){
+    
+    #menu{
+        position: absolute;
+        right: 0.1rem;
+        box-sizing: border-box;
+    }
+}
+@media only screen and (max-width:650px){
+    #menu-btn{
+        display: inherit;
+        position: absolute;
+        right: 2rem;
+    }
+    #menu{
+        display: none;
+    }
+
+}
+@media only screen and (max-width:649px){
+    #navbar-ul>li{
+        margin: unset;
+    }
+    #hidden-icons1{
+        display: block;
+    }
+    #social-icons{
+        display: block;
+    }
+    #menu{
+        -webkit-appearance: none;
+        /* display: block; */
+        padding: 0;
+        margin: unset;
+        align-items: center;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgb(37, 43, 70, 0.94);
+        position: absolute;
+        top: 0;
+        
+        z-index: 2;
+        box-sizing: unset;
+           
+    }
+    #hidden-menu{
+        display: flex;
+        flex-direction: column;
+        color: white;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.3rem;
+        font-weight: lighter;
+        box-sizing: unset;
+        width: 100%;
+        
+    }
+    #hidden-menu>li{
+        /* padding: 0.9em; */
+        
+        margin: 0.6em;
+        width: 86%;
+        float: unset;
+        
+        
+    }
+    #social-icons{
+        position: absolute;
+        bottom: 1.5rem;
+        border: unset;
+        
+    }
+    #fb{
+        margin-right: 0.7rem;
+    }
+    #twitter{
+        margin-left: 0.7rem;
+    }
+    #closeicon{
+        position: absolute;
+        right: 1rem;
+    }
+    #logohidden{
+        position: absolute;
+        left: 2rem;
+    }
+    #hidden-icons1{
+        margin: 2.5em;
+        padding: unset;
+        width: 100%;
+        
+        padding-bottom: 3em;
+        border-bottom: 0.03px solid rgb(251, 251, 251, 0.3);
+    }
+    #login-btn{
+        background-color: unset;
+        color: white;
+        border: 1px solid rgb(251, 251, 251);
+        padding-left: 5.6em;
+        padding-right: 5.6em;
+        font-size: 1.3rem;
+        padding-top: 0.4em;
+        padding-bottom: 0.4em;
+        margin-top: 0.4em;
+    }
+    .links{
+        text-align: center;
+        padding: 0.5em;
+        
+    }
+    #icons{
+        display: flex;
+        justify-content: center;
+    }
+    .for-border{
+        border-bottom:0.03px solid rgb(251, 251, 251, 0.3);
+
+    }
+    /* #features{
+        padding-top: 2.5em;
+        border-top: 0.2px solid white;
+    } */
+
+}
+@media (max-width: 367px){
+    #login-btn{
+        padding-right: 4.5rem;
+        padding-left: 4.5rem;
+        padding-top: 0.4rem;
+        padding-bottom: 0.4rem;
+    }
+}
+@media (max-width: 275px){
+    #login-btn{
+        padding-right: 2.5rem;
+        padding-left: 2.5rem;
+        padding-top: 0.4rem;
+        padding-bottom: 0.4rem;
+    }
+}
