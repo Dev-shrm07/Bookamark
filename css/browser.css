@@ -107,6 +107,9 @@
     .smallhd{
         font-size: 1.4rem;
     }
+    .cards{
+        width: 90%;
+    }
     
 }
 @media (max-width:503px) {
